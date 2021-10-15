@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #0d1323;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}
+
+.row,
+.col {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+#controls,
+#user-info,
+.wrapper,
+.inner-wrapper {
+  border-radius: 0.7rem;
+}
+
+#controls {
+  background-color: #1d204b;
+  width: 230px;
+}
+
+#user-info {
+  background-color: #5746ea;
+  padding: 1.5rem;
+}
+
+.label {
+  font-size: 0.8rem;
+  color: #b6adff;
+  line-height: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.user-name {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #efefff;
+  margin-bottom: 3.5rem;
+}
+
+.user-photo {
+  width: 75px;
+  height: 75px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+#controls ul {
+  list-style: none;
+  margin: 1rem 2rem;
+}
+
+#controls ul li {
+  padding: 0.6rem 0rem;
+  color: hsl(235, 45%, 61%);
+  cursor: pointer;
+}
+
+#controls ul li:hover,
+#controls ul li.selected {
+  color: hsl(236, 100%, 90%);
+}
+
+.wrapper {
+  position: relative;
+  height: 220px;
+  width: 230px;
+  overflow: hidden;
+}
+
+.wrapper-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95%;
+}
+
+.wrapper .bg-image {
+  position: absolute;
+  top: -7px;
+  right: 10px;
+  width: 70px;
+  height: 55px;
+}
+
+.inner-wrapper {
+  position: absolute;
+  bottom: -2px;
+  background-color: #1d204b;
+  height: 85%;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.inner-wrapper:active,
+.inner-wrapper:hover {
+  background-color: #34397b;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .title {
+  color: hsl(236, 100%, 90%);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.menu-icon {
+  width: 20px;
+  height: 5px;
+  cursor: pointer;
+}
+
+.hrs {
+  color: #f7faff;
+  font-size: 3rem;
+  font-weight: 300;
+  padding-top: 1.2rem;
+}
+
+.last-hrs {
+  font-size: 0.9rem;
+  color: #9094c7;
+  padding-top: 1rem;
+}
+
+.work {
+  background-color: #ff8c66;
+}
+
+.play {
+  background-color: #56c2e6;
+}
+
+.study {
+  background-color: #ff5c7c;
+}
+
+.exercise {
+  background-color: #4acf81;
+}
+
+.social {
+  background-color: #7536d3;
+}
+
+.self-care {
+  background-color: #f1c65b;
+}
+
+@media (max-width: 500px) {
+  .col,
+  .row {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .row.mobile {
+    align-items: center;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  #controls ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .user-name {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .wrapper,
+  #controls {
+    width: 95%;
+  }
+
+  .wrapper {
+    height: 180px;
+  }
+
+  .inner-wrapper {
+    height: 80%;
+  }
+  .hrs {
+    font-size: 2.5rem;
+  }
+}

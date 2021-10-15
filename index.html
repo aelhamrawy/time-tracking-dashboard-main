@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body>
+  <main>
+    <h1 style="display: none;">Time tracking dashboard</h1>
+    <div class="row" style="padding: 1rem 0rem">
+      <div id="controls">
+        <div id="user-info">
+          <img class="user-photo" src="./images/image-jeremy.png" alt="User Photo" />
+          <div class="caption">
+            <p class="label">Report for</p>
+            <p class="user-name">Jeremy Robson</p>
+          </div>
+        </div>
+        <ul>
+          <li id="daily-link" summary-link onClick="onSummaryChange('daily')">
+            Daily
+          </li>
+          <li id="weekly-link" summary-link onClick="onSummaryChange('weekly')">
+            Weekly
+          </li>
+          <li id="monthly-link" summary-link onClick="onSummaryChange('monthly')">
+            Monthly
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="wrapper">
+            <div class="wrapper-bg work"></div>
+            <img class="bg-image" src="./images/icon-work.svg" alt="work" />
+            <div class="inner-wrapper">
+              <div class="header">
+                <span class="title">Work</span>
+                <img src="./images/icon-ellipsis.svg" alt="menu-icon" class="menu-icon" />
+              </div>
+              <div class="row mobile">
+                <div id="work-hrs" class="hrs">32hrs</div>
+                <div id="work-last-hrs" class="last-hrs">Last week - 5hrs</div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="wrapper-bg play"></div>
+            <img class="bg-image" src="./images/icon-play.svg" alt="play" />
+            <div class="inner-wrapper">
+              <div class="header">
+                <span class="title">Play</span>
+                <img src="./images/icon-ellipsis.svg" alt="menu-icon" class="menu-icon" />
+              </div>
+              <div class="row mobile">
+                <div id="play-hrs" class="hrs">32hrs</div>
+                <div id="play-last-hrs" class="last-hrs">Last week - 5hrs</div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="wrapper-bg study"></div>
+            <img class="bg-image" src="./images/icon-study.svg" alt="study" />
+            <div class="inner-wrapper">
+              <div class="header">
+                <span class="title">Study</span>
+                <img src="./images/icon-ellipsis.svg" alt="menu-icon" class="menu-icon" />
+              </div>
+              <div class="row mobile">
+                <div id="study-hrs" class="hrs">32hrs</div>
+                <div id="study-last-hrs" class="last-hrs">Last week - 5hrs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="wrapper">
+            <div class="wrapper-bg exercise"></div>
+            <img class="bg-image" src="./images/icon-exercise.svg" alt="exercise" />
+            <div class="inner-wrapper">
+              <div class="header">
+                <span class="title">Exrcise</span>
+                <img src="./images/icon-ellipsis.svg" alt="menu-icon" class="menu-icon" />
+              </div>
+              <div class="row mobile">
+                <div id="exercise-hrs" class="hrs">32hrs</div>
+                <div id="exercise-last-hrs" class="last-hrs">
+                  Last week - 5hrs
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="wrapper-bg social"></div>
+            <img class="bg-image" src="./images/icon-social.svg" alt="social" />
+            <div class="inner-wrapper">
+              <div class="header">
+                <span class="title">Social</span>
+                <img src="./images/icon-ellipsis.svg" alt="menu-icon" class="menu-icon" />
+              </div>
+              <div class="row mobile">
+                <div id="social-hrs" class="hrs">32hrs</div>
+                <div id="social-last-hrs" class="last-hrs">
+                  Last week - 5hrs
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="wrapper-bg self-care"></div>
+            <img class="bg-image" src="./images/icon-self-care.svg" alt="work" />
+            <div class="inner-wrapper">
+              <div class="header">
+                <span class="title">Self Care</span>
+                <img src="./images/icon-ellipsis.svg" alt="menu-icon" class="menu-icon" />
+              </div>
+              <div class="row mobile">
+                <div id="self-care-hrs" class="hrs">32hrs</div>
+                <div id="self-care-last-hrs" class="last-hrs">
+                  Last week - 5hrs
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+  <script>
+    onSummaryChange("weekly");
+  </script>
+</body>
+
+</html>
